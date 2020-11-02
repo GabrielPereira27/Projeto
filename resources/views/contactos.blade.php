@@ -3,9 +3,10 @@
 Contactos
 @endsection
 @section ('header')
-Fale connosco 
+Fale connosco
 @endsection
 @section ('conteudo')
+
 	<!-- aqui fica o form -->
 <form method="post" action="{{route('processar.form')}}">
 	@csrf
@@ -21,10 +22,8 @@ Fale connosco
 	<input type="text" name="morada">
 	<br>
 
-	<label for="morada">Nif</label>
-	<input type="text" name="nif">
-	<br>
-
+	<label for="morada">Telefone</label>
+	<input type="text" name="telefone">
 	<br>
 
 	<button type="submit">Enviar</button>
